@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url(WebContent/image/background.jpeg);
+            margin: 0;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            font-family: monospace, serif;
+            letter-spacing: 0.05em;
+        }
+
+        .heading {
+            align-items: center;
+            text-align: center;
+            color: red;
+        }
+
+        form {
+            text-align: center;
+            width: 390px;
+            padding: 15px 11px 24px;
+            margin: 0 auto;
+            background-color: li;
+            box-shadow: 0 8px 16px pink;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            margin-top: 7%;
+            position: fixed;
+            margin-left: 38%;
+        }
+
+        label {
+            color: aqua;
+            display: inline-flexbox;
+        }
+
+        input {
+            width: 210px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            height: 30px;
+        }
+
+        select {
+            width: 210px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            height: 30px;
+        }
+
+        input[type="submit"] {
+            width: 120px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        #name {
+            margin-left: -4px;
+        }
+
+        .name {
+            margin-left: 62px;
+        }
+
+        #phone {
+            margin-left: -3px;
+        }
+
+        .phone {
+            margin-left: 53px;
+        }
+
+        #email {
+            margin-left: -3px;
+        }
+
+        .email {
+            margin-left: 53px;
+        }
+
+        .branch {
+            margin-left: 45px;
+        }
+
+        .location {
+            margin-left: 25px;
+        }
+
+        .cpass {
+            margin-left: 5px;
+        }
+
+        .pass {
+            margin-left: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            background-color: yellow;
+        }
+
+        input::placeholder {
+            color: black;
+        }
+        #line{
+            width: 95%;
+            height: 4px;
+            margin-left: 2.5%;
+            margin-top: -8px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="signup" method="post">
+        <h1 class="heading">Signup</h1><p id="line"></p>
+        <label id="name">Name </label><input type="text" name="name" placeholder="enter your name" class="name"><br>
+        <label id="phone">Phone </label><input type="pol" class="phone" name="phone"
+            placeholder="enter your phone number"><br>
+        <label id="email">Email </label><input type="email" class="email " name="email"
+            placeholder="enter your email"><br>
+        <label id="branch">Branch </label><select class="branch" name="branch">
+            <option value="">Select branch</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>CIVIL</option>
+        </select><br>
+        <label id="Location">Location </label><select class="location" name="loc">
+            <option value="">Select city</option>
+            <option>Banglore</option>
+            <option>Chennai</option>
+            <option>Mumbai</option>
+            <option>Hydrabad</option>
+        </select><br>
+        <label id="pass">Password </label><input class="pass" type="password" name="password"
+            placeholder="enter your password"><br>
+        <label id="cpass">C-password </label><input class="cpass" type="password" name="confirm"
+            placeholder="enter your confirm password"><br>
+        <input type="submit" placeholder="signup">
+        <p class="refer">Already Have Account <a href="login.html">Login Here</a></p>
+    </form>
+</body>
+
+</html>
