@@ -8,7 +8,7 @@ public class Connector {
 	public static Connection getConnection() {
 		String url="jdbc:mysql://localhost:3306/student";
 		String user="root";
-		String password="Mdmak@123";
+		String password="password";
 		Connection con=null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
